@@ -44,7 +44,7 @@ public class Main {
             System.out.println("Empty or non existing dir.");
         } else {
             for (int i = 0; i < flist.length; i++) {
-                System.out.println(flist[i]+" found");
+                System.out.println(dir+flist[i]+" found");
             }
         }
     }
