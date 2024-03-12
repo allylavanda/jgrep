@@ -12,8 +12,8 @@ Meanwhile, the compiled output files will be generated in the `jgrep/bin` folder
 
 This is being made using JDK21
 ## Usage
-`java jgrep cd (directory to search in)` - search only the directory given
-`java jgrep (h or help)` - give user link to documentation for help
+- `java jgrep cd (directory to search in)` - search only the directory given
+- `java jgrep (h or help)` - give user link to documentation for help
 
 ## Current Featureset
 - Search provided directory for any files with given String and list back to user
