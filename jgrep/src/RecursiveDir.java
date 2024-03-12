@@ -11,11 +11,6 @@ public class RecursiveDir implements Search{
         return name.startsWith(fname);
         }
     }
-    @Override
-    public void run() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'run'");
-    }
 
     @Override
     public void search(String dir, String fileName) {

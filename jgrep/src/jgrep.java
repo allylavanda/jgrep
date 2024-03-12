@@ -19,8 +19,7 @@ public class jgrep {
             cd.run(args[1],args[2]);
         } else if(args[0].equals("rd")){
             System.out.println("Starting recursive directory search...");
-            RecursiveDir rd = new RecursiveDir();
-            rd.run();
+            // RecursiveDir rd = new RecursiveDir();
         } else if(args[0].equalsIgnoreCase("h") || args[0].equalsIgnoreCase("help")){
             System.out.println("Please refer to the github documentaiton: https://github.com/allylavanda/jgrep");
         }

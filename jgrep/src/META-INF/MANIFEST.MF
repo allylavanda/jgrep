@@ -1,0 +1,4 @@
+Manifest-VersiON: 1.0
+Created by: allylavanda
+package-name: jgrep
+Main-Class: jgrep
