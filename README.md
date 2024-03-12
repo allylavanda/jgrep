@@ -10,4 +10,12 @@ The workspace contains two folders by default, where:
 
 Meanwhile, the compiled output files will be generated in the `jgrep/bin` folder by default.
 
-## This is being made using JDK21
+This is being made using JDK21
+
+## Current Featureset
+- Search provided directory for any files with given String and list back to user
+
+## Planned Features
+- Ability to search sub-directories
+- Ability to edit file names
+- Ability to search through files for given string, display what line it's on, which file it's from and path to the file to the user
