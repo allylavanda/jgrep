@@ -4,13 +4,13 @@ import java.util.Scanner;
 public class CurrentDir{
     class MyFileNameFilter implements FilenameFilter {
     String fname;
-    public MyFileNameFilter (String fName){
+        public MyFileNameFilter (String fName){
         this.fname = fName;
-    }
-    public boolean accept(File dir, String name) {
+        }
+        public boolean accept(File dir, String name) {
         return name.startsWith(fname);
+        }
     }
-}
     protected String dir;
     protected String fileName;
     private void getDir(){
