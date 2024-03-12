@@ -15,8 +15,10 @@ public class Main {
         }
         if(args[0].equals("cd")){
             System.out.println("Starting current directory search...");
-            CurrentDir cur = new CurrentDir();
-            cur.run();
+            CurrentDir cd = new CurrentDir();
+            cd.run();
+        } else if(args[0].equalsIgnoreCase("h") || args[0].equalsIgnoreCase("help")){
+            System.out.println("Please refer to the github documentaiton: https://github.com/allylavanda/jgrep");
         }
     }
 }
