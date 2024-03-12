@@ -1,7 +1,9 @@
 import java.io.File;
 import java.io.FilenameFilter;
-import java.util.Scanner;
 public class CurrentDir implements Search{
+    protected String dir;
+    protected String fileName;
+    
     class MyFileNameFilter implements FilenameFilter {
     String fname;
         public MyFileNameFilter (String fName){
@@ -11,18 +13,7 @@ public class CurrentDir implements Search{
         return name.startsWith(fname);
         }
     }
-    protected String dir;
-    protected String fileName;
-    private void getDir(){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the directory you would like to search: ");
-        this.dir = sc.nextLine();
-        System.out.println("Dir: "+dir);
-        System.out.println("Enter the file name to search for: ");
-        this.fileName = sc.nextLine();
-        System.out.println("Content: "+fileName);
-        sc.close();
-    }
+
     public void search(String dir, String fileName){
         File directory = new File(dir);
         MyFileNameFilter filter = new MyFileNameFilter(fileName);
@@ -36,8 +27,9 @@ public class CurrentDir implements Search{
             }
         }
     }
-    public void run(){
-        getDir();
+    public void run(String dir, String fileName){
+        this.dir = dir;
+        this.fileName = fileName;
         search(this.dir, this.fileName);
     }
 }

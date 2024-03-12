@@ -16,7 +16,7 @@ public class jgrep {
         if(args[0].equals("cd")){
             System.out.println("Starting current directory search...");
             CurrentDir cd = new CurrentDir();
-            cd.run();
+            cd.run(args[1],args[2]);
         } else if(args[0].equals("rd")){
             System.out.println("Starting recursive directory search...");
             RecursiveDir rd = new RecursiveDir();
