@@ -1,7 +1,7 @@
 import java.io.File;
 import java.io.FilenameFilter;
 import java.util.Scanner;
-public class CurrentDir{
+public class CurrentDir implements Search{
     class MyFileNameFilter implements FilenameFilter {
     String fname;
         public MyFileNameFilter (String fName){
@@ -23,7 +23,7 @@ public class CurrentDir{
         System.out.println("Content: "+fileName);
         sc.close();
     }
-    private void search(String dir, String fileName){
+    public void search(String dir, String fileName){
         File directory = new File(dir);
         MyFileNameFilter filter = new MyFileNameFilter(fileName);
         String[] flist = directory.list(filter);
