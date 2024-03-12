@@ -1,18 +1,6 @@
-import java.io.File;
-import java.io.FilenameFilter;
-
 /**
  * This program is being made to be a windows equivalent of grep because I use windows subsystem for linux daily just for grep lol
  */
-class MyFileNameFilter implements FilenameFilter {
-    String fname;
-    public MyFileNameFilter (String fName){
-        this.fname = fName;
-    }
-    public boolean accept(File dir, String name) {
-        return name.startsWith(fname);
-    }
-}
 public class Main {
 
     public static void main(String[] args) {
