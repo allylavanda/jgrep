@@ -3,7 +3,7 @@
 
 Hello and welcome to my solution I'm working on to add an equivalent tool to grep to windows, jgrep! This is called jgrep since I'll be programming this in java as it is currently my most proficient language. I found that I use windows subsystem for linux on a near daily basis, so I decided to make my own solution for it for fun!
 ## What is grep?
-Grep is a command-line tool built into the linux kernal. It gives us the ability to search for files, and to search the contents of files for patterns.
+Grep is a command-line tool built into the linux kernel. It gives us the ability to search for files, and to search the contents of files for patterns.
 For more information, see here: https://www.gnu.org/software/grep/manual/grep.html
 
 ## Folder Structure
