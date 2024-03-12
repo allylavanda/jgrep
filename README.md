@@ -1,6 +1,6 @@
 ## jgrep
 
-Hello and welcome to my solution I'm working on to add grep to windows. I found that I use windows subsystem for linux on a near daily basis, so I decided to make my own solution for it for fun!
+Hello and welcome to my solution I'm working on to add an equivalent tool to grep to windows. I found that I use windows subsystem for linux on a near daily basis, so I decided to make my own solution for it for fun!
 
 ## Folder Structure
 
