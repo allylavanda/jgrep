@@ -10,6 +10,7 @@ For more information, see here: https://www.gnu.org/software/grep/manual/grep.ht
 ## Usage
 - `java -jar jgrep.jar "cd (directory to search in)" "string in file name"` - search only the directory given
 - `java -jar jgrep.jar "(h or help)"` - give user link to documentation for help
+- `java -jar jgrep.jar "rd (directory to search in)" "string in file name"` - search current directory and sub-directories
 
 ## Current Featureset
 - Search provided directory for any files with given String and list back to user
