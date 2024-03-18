@@ -9,7 +9,6 @@ public class jgrep {
         System.out.println("Welcome to jgrep by allylavanda");
         argHandler(args);
     }
-
     private static void argHandler(String[] args) throws IOException{
         if(args.length == 0){
             System.out.println("You must use arguments to run this application. If you need help, run this program with the 'help' argument, or consult the github.");
@@ -26,6 +25,10 @@ public class jgrep {
             // RecursiveDir rd = new RecursiveDir();
         } else if(args[0].equalsIgnoreCase("h") || args[0].equalsIgnoreCase("help")){
             System.out.println("Please refer to the github documentaiton: https://github.com/allylavanda/jgrep");
+        } else if(args[0].equals("f")){
+            System.out.println("Reading "+args[1]);
+            ReadFile f = new ReadFile();
+            f.run(args[1], args[2]);
         }
     }
 }
