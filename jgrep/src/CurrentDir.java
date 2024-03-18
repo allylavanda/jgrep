@@ -10,7 +10,7 @@ public class CurrentDir implements Search{
         this.fname = fName;
         }
         public boolean accept(File dir, String name) {
-        return name.startsWith(fname);
+        return name.toLowerCase().contains(fname);
         }
     }
 
