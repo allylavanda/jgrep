@@ -4,14 +4,14 @@ import java.io.FilenameFilter;
 public class RecursiveDir {
     protected String dir;
     protected String fileName;
-    
+
     class MyFileNameFilter implements FilenameFilter {
-    String fname;
+        String fname;
         public MyFileNameFilter (String fName){
-        this.fname = fName;
+            this.fname = fName;
         }
         public boolean accept(File dir, String name) {
-        return name.toLowerCase().contains(fname);
+            return name.toLowerCase().contains(fname);
         }
     }
     public void search(File directory){
@@ -19,19 +19,17 @@ public class RecursiveDir {
         String[] flist = directory.list(filter);
         if(directory.isDirectory()){
             if(directory.canRead()){
-                if(flist == null) {
-                    System.out.println("Empty or non existing dir.");
-                } else {
+                if(flist != null) {
                     for(File tmp : directory.listFiles()){
                         if(tmp.isDirectory()){
                             search(tmp);
                         } else {
-                            for (int i = 0; i < flist.length; i++) {
-                                System.out.println(flist[i]+" found");
+                            if(tmp.getAbsolutePath().toLowerCase().contains(this.fileName)){
+                                System.out.println(tmp.getAbsolutePath());
                             }
                         }
                     }
-                    
+
                 }
             }
         }

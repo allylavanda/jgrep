@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jgrep">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/jgrep.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
