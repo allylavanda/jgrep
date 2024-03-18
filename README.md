@@ -8,15 +8,18 @@ For more information, see here: https://www.gnu.org/software/grep/manual/grep.ht
 
 
 ## Usage
-- `java -jar jgrep.jar "cd (directory to search in)" "string in file name"` - search only the directory given
-- `java -jar jgrep.jar "(h or help)"` - give user link to documentation for help
-- `java -jar jgrep.jar "rd (directory to search in)" "string in file name"` - search current directory and sub-directories
+- `java -jar jgrep.jar cd "(directory to search in)" "string in file name"` - search only the directory given
+- `java -jar jgrep.jar (h or help)` - give user link to documentation for help
+- `java -jar jgrep.jar rd "(directory to search in)" "string in file name"` - search current directory and sub-directories
+- `java -jar jgrep.jar f "(path to file)" "pattern to locate"` - search given file for pattern
 
 ## Current Featureset
 - Search provided directory for any files with given String and list back to user
+- Search provided file for patterns, list Line number, and full line back to user
 
 ## Planned Features
 - [x] Ability to search current directory
 - [x] Ability to search sub-directories
+- [x] Ability to read files
 - [ ] Ability to edit file names
 - [ ] Ability to search through files for given string, display what line it's on, which file it's from and path to the file to the user
