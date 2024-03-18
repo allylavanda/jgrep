@@ -15,6 +15,7 @@ For more information, see here: https://www.gnu.org/software/grep/manual/grep.ht
 - Search provided directory for any files with given String and list back to user
 
 ## Planned Features
-- Ability to search sub-directories
-- Ability to edit file names
-- Ability to search through files for given string, display what line it's on, which file it's from and path to the file to the user
+- [x] Ability to search current directory
+- [x] Ability to search sub-directories
+- [ ] Ability to edit file names
+- [ ] Ability to search through files for given string, display what line it's on, which file it's from and path to the file to the user
