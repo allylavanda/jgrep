@@ -27,7 +27,7 @@ public class RecursiveDir {
                             search(tmp);
                         } else {
                             for (int i = 0; i < flist.length; i++) {
-                                System.out.println(dir+"\\"+flist[i]+" found");
+                                System.out.println(flist[i]+" found");
                             }
                         }
                     }
