@@ -1,7 +1,7 @@
 ## jgrep
 <img src='https://github.com/allylavanda/jgrep/blob/main/img/icon.jpg' width='100'>
 
-Hello and welcome to my solution I'm working on to add an equivalent tool to grep to windows, jgrep! This is called jgrep since I'll be programming this in java as it is currently my most proficient language. I found that I use windows subsystem for linux on a near daily basis, so I decided to make my own solution for it for fun! This is being made using JDK21
+Hello and welcome to my solution I'm working on to add an equivalent tool to grep to windows, jgrep! This is called jgrep since I'll be programming this in java as it is currently my most proficient language. I found that I use windows subsystem for linux on a near daily basis, so I decided to make my own solution for it for fun! This is being made using JDK20
 ## What is grep?
 Grep is a command-line tool built into the linux kernel. It gives us the ability to search for files, and to search the contents of files for patterns.
 For more information, see here: https://www.gnu.org/software/grep/manual/grep.html
